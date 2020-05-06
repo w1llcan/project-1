@@ -21,8 +21,8 @@ header > h1 {
   border: 7px solid #000;
   border-radius: 5px;
   text-align: center;
-  width: 350px;
-  height: 200px;
+  width: 60%;
+  height: 35%;
   color: rgb(230, 226, 46);
   font-size: 100px;
   padding: 40px 30px;
@@ -30,11 +30,11 @@ header > h1 {
 }
 
 #round-label {
-  position: absolute;
+  position: relative;
   font-size: 28px;
   color: rgb(209, 209, 165);
-  top: 0;
-  left: 100;
+  top: -35;
+  left: -30;
 }
 
 .badge {
@@ -46,7 +46,7 @@ header > h1 {
 #player-label {
   position: absolute;
   font-size: 32px;
-  top: 70px;
+  top: 90px;
   left: -60px;
   color: #2D4707;
 }
@@ -54,12 +54,19 @@ header > h1 {
 #computer-label {
   position: absolute;
   font-size: 32px;
-  top: 70px;
+  top: 90px;
   right: -75px;
   color: #03255A;
 }
+
+#scores-section {
+  position: relative;
+  top: 20%;
+  left: -15px;
+}
+
 body {
-  background: url(https://i.imgur.com/TbR9G3x.png) no-repeat center center fixed; 
+  background: url(https://i.imgur.com/jt98KTo.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,20 +89,31 @@ header > h2 {
   font-family: Asap, sans-serif;
 }
 
+img {
+  border-radius: 50%;
+}
+
 .choices {
   margin-top: 50px;
   text-align: center;
+  background: #e8e1cc;
 }
 
 .choice {
-  border: 4px solid #a0c9e8;
+  -webkit-transform: scale(0.75);
+     -moz-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+       -o-transform: scale(0.75);
+          transform: scale(0.75);
+  border: 4px solid #287a2a;
   border-radius: 50%;
   display: inline-block;
   transition: all 0.4s ease;
+  padding: 0 0;
 }
 
 .choice:hover {
   cursor: pointer;
-  background: #a0c9e8;
+  background: #287a2a;
 }
 
