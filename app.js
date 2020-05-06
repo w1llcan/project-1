@@ -6,7 +6,6 @@ alert('Good luck, ' + name.charAt(0).toUpperCase() + name.slice(1) + '! ' + '\n\
 let playerScore = 0;
 let computerScore = 0;
 let currRound = 0;
-let verb;
 const playerScore_span = document.getElementById("player-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreboard_div = document.querySelector("scoreboard");
@@ -35,7 +34,7 @@ const winRound = (playerChoice, computerChoice) => {
   playerScore_span.innerHTML = playerScore;
   const colorMyWord = `${name}: `.fontcolor("#c9b31e");
   const playerWinsHand = " wins! ".fontcolor("#3300ff");
-  result_p.innerHTML = `${colorMyWord}${playerWinsHand} <br> ${colorMyWord} ${playerChoice}<br> Computer: ${computerChoice}.`;
+  result_p.innerHTML = `The ${colorMyWord} wins!<br> ${colorMyWord}: ${playerChoice}<br> Computer: ${computerChoice}`
   player_label_div.innerHTML = `${name}`;
   currRound++;
   round_label_div.innerHTML = `Round: ${currRound} / ${numRounds}`;
